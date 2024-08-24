@@ -19,7 +19,7 @@ class Display extends StatelessWidget {
               begin: Alignment.bottomRight,
               end: Alignment.topLeft,
               colors: [
-                Color.fromARGB(255, 19, 25, 33),
+                Color.fromARGB(255, 19, 29, 42),
                 Color.fromARGB(255, 9, 10, 21)
               ],
             ),

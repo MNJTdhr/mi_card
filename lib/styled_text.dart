@@ -9,7 +9,11 @@ class StyledText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       incomingText,
-      style: const TextStyle(color: Colors.white, fontSize: 20),
+      style: const TextStyle(
+        color: Colors.white,
+        fontSize: 20,
+        fontFamily: 'NewAmsterdam',
+      ),
     );
   }
 }
