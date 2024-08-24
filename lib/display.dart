@@ -9,7 +9,7 @@ class Display extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         foregroundColor: Colors.white,
-        backgroundColor: Colors.blue,
+        backgroundColor: const Color.fromARGB(255, 19, 19, 19),
         title: const Text("Login page"),
       ),
       body: SafeArea(
@@ -18,13 +18,23 @@ class Display extends StatelessWidget {
             gradient: LinearGradient(
               begin: Alignment.bottomRight,
               end: Alignment.topLeft,
-              colors: [Colors.lightBlueAccent, Colors.blue],
+              colors: [
+                Color.fromARGB(255, 19, 25, 33),
+                Color.fromARGB(255, 9, 10, 21)
+              ],
             ),
           ),
           child: const Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                CircleAvatar(
+                  radius: 50,
+                  backgroundImage: AssetImage('assets/images/fevicon.png'),
+                ),
+                SizedBox(
+                  height: 50,
+                ),
                 StyledText("data"),
                 StyledText("data"),
                 StyledText("data"),
