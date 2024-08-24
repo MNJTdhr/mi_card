@@ -15,10 +15,12 @@ class Display extends StatelessWidget {
       body: SafeArea(
         child: Container(
           decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.bottomRight,
-                  end: Alignment.topLeft,
-                  colors: [Colors.lightBlueAccent, Colors.blue])),
+            gradient: LinearGradient(
+              begin: Alignment.bottomRight,
+              end: Alignment.topLeft,
+              colors: [Colors.lightBlueAccent, Colors.blue],
+            ),
+          ),
           child: const Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
