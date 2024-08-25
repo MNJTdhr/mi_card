@@ -1,3 +1,4 @@
+//styled_text.dart
 import 'package:flutter/material.dart';
 
 class StyledText extends StatelessWidget {
@@ -11,8 +12,9 @@ class StyledText extends StatelessWidget {
       incomingText,
       style: const TextStyle(
         color: Colors.white,
-        fontSize: 20,
+        fontSize: 70,
         fontFamily: 'NewAmsterdam',
+        fontWeight: FontWeight.normal,
       ),
     );
   }

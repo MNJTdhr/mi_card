@@ -1,3 +1,4 @@
+//display.dart
 import 'package:flutter/material.dart';
 import 'package:mi_card/styled_text.dart';
 
@@ -9,7 +10,7 @@ class Display extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         foregroundColor: Colors.white,
-        backgroundColor: const Color.fromARGB(255, 19, 19, 19),
+        backgroundColor: Colors.black,
         title: const Text("Login page"),
       ),
       body: SafeArea(
@@ -33,11 +34,11 @@ class Display extends StatelessWidget {
                   backgroundImage: AssetImage('assets/images/fevicon.png'),
                 ),
                 SizedBox(
-                  height: 50,
+                  height: 20,
                 ),
-                StyledText("data"),
-                StyledText("data"),
-                StyledText("data"),
+                StyledText("Data"),
+                Text("data", style: TextStyle(color: Colors.white, fontSize: 20),),
+                Text("data", style: TextStyle(color: Colors.white, fontSize: 20),),
               ],
             ),
           ),
