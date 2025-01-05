@@ -12,42 +12,43 @@ class MyWidget extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("data"),
-          backgroundColor: const Color.fromARGB(255, 3, 0, 30),
+          title: Text("Data"),
           foregroundColor: Colors.white,
+          backgroundColor: Colors.black87,
         ),
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                height: 40,
-                color: Colors.white,
-                child: Text(
-                  "data",
-                  style: TextStyle(color: Colors.black),
-                ),
+                width: 100,
+                color: Colors.red,
               ),
               SizedBox(
-                height: 20,
+                width: 55,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.yellow,
+                  ),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.green,
+                  ),
+                ],
+              ),
+              SizedBox(
+                width: 55,
               ),
               Container(
-                height: 40,
+                width: 100,
                 color: Colors.blue,
-                child: Text(
-                  "data",
-                  style: TextStyle(color: Colors.black),
-                ),
-              ),
-              Container(
-                height: 40,
-                color: Colors.yellow,
-                margin: EdgeInsets.symmetric(vertical: 20),
-                child: Text(
-                  "data",
-                  style: TextStyle(color: Colors.black),
-                ),
               ),
             ],
           ),
