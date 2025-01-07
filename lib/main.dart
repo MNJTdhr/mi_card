@@ -17,38 +17,34 @@ class MyWidget extends StatelessWidget {
           backgroundColor: Colors.black87,
         ),
         backgroundColor: Colors.teal,
-        body: SafeArea(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Colors.teal,
+                Colors.tealAccent,
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Container(
-                width: 100,
-                color: Colors.red,
-              ),
-              SizedBox(
-                width: 55,
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.yellow,
-                  ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.green,
-                  ),
-                ],
-              ),
-              SizedBox(
-                width: 55,
+              CircleAvatar(
+                radius: 60,
+                backgroundImage: AssetImage('assets/images/jeff.jpg'),
               ),
               Container(
                 width: 100,
-                color: Colors.blue,
+                height: 100,
+                color: Colors.yellow,
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.green,
               ),
             ],
           ),
