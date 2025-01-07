@@ -34,17 +34,20 @@ class MyWidget extends StatelessWidget {
             children: [
               CircleAvatar(
                 radius: 60,
-                backgroundImage: AssetImage('assets/images/jeff.jpg'),
+                backgroundImage: AssetImage(
+                  'assets/images/jeff.jpg',
+                ),
               ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.yellow,
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.green,
+              Center(
+                child: Text(
+                  "Jeff the Butterfly",
+                  style: TextStyle(
+                    fontFamily: 'ConcertOne',
+                    color: Colors.white,
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
             ],
           ),
