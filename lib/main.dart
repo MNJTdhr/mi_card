@@ -39,14 +39,27 @@ class MyWidget extends StatelessWidget {
                 ),
               ),
               Center(
-                child: Text(
-                  "Jeff the Butterfly",
-                  style: TextStyle(
-                    fontFamily: 'ConcertOne',
-                    color: Colors.white,
-                    fontSize: 40,
-                    fontWeight: FontWeight.bold,
-                  ),
+                child: Column(
+                  children: [
+                    Text(
+                      "Jeff",
+                      style: TextStyle(
+                        fontFamily: 'ConcertOne',
+                        color: Colors.white,
+                        fontSize: 40,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      "Jeff the butterfly",
+                      style: TextStyle(
+                        fontFamily: 'Caveat',
+                        color: Colors.white,
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
