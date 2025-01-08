@@ -30,7 +30,6 @@ class MyWidget extends StatelessWidget {
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               CircleAvatar(
                 radius: 60,
@@ -57,6 +56,57 @@ class MyWidget extends StatelessWidget {
                         color: Colors.white,
                         fontSize: 25,
                         fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(
+                      width: 200,
+                      height: 5,
+                      child: Divider(
+                        color: Colors.teal.shade100,
+                      ),
+                    ),
+                    Card(
+                      color: Colors.white,
+                      margin: EdgeInsets.symmetric(
+                        vertical: 10,
+                        horizontal: 20,
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: ListTile(
+                          leading: Icon(
+                            Icons.call,
+                            color: Colors.teal,
+                          ),
+                          title: Text(
+                            "+91 132 321 1230",
+                            style: TextStyle(
+                              color: Colors.teal,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      // color: Colors.white,
+                      margin: EdgeInsets.symmetric(
+                        vertical: 10,
+                        horizontal: 20,
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.all(8),
+                        child: ListTile(
+                          leading: Icon(
+                            Icons.mail,
+                            color: Colors.teal,
+                          ),
+                          title: Text(
+                            "jeff@email.com",
+                            style: TextStyle(
+                              color: Colors.teal,
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                   ],
